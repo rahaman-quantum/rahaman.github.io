@@ -5,5 +5,4 @@
 
 ## Research Interest:
 ### Quantum Signal Processing
-### Quantum Simulation for Chemistry/Physics
-### Quantum Machine Learning Theory 
+### Quantum Simulation 
