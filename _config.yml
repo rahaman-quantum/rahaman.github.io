@@ -1,4 +1,29 @@
-title: Mostafizur Rahaman
+# title: Mostafizur Rahaman
 # show_donloads: true
 # theme: jekyll-theme-minimal
-theme: "cayman"
+title: Mostafizur Rahaman
+description: "A clean and elegant personal site."
+show_downloads: true
+theme: jekyll-theme-minimal
+
+# Site configuration
+author:
+  name: "Mostafizur Rahaman"
+  email: "rahaman1@ibm.com"
+  linkedin: "https://www.linkedin.com/in/mostafizur-rahaman-0698b3a6/"
+
+# Sidebar content
+sidebar:
+  news:
+    - title: "New Project Launched"
+      link: "https://example.com/project"
+    - title: "Joined XYZ Company"
+      link: "https://example.com/xyz-announcement"
+  contact:
+    email: "rahaman1@ibm.com"
+    linkedin: "https://www.linkedin.com/in/mostafizur-rahaman-0698b3a6/"
+
+# Markdown configuration
+markdown: kramdown
+kramdown:
+  input: GFM
