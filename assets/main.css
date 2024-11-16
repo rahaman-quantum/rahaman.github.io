@@ -1,0 +1,22 @@
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li i {
+  margin-right: 8px;
+  color: #0077b5; /* LinkedIn blue */
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #0073e6;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
