@@ -3,25 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title | default: site.title }}</title>
+  <title>Mostafizur Rahaman</title>
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <div class="container">
-    <!-- Sidebar -->
-    <aside class="sidebar">
+    <!-- Left Sidebar -->
+    <aside class="sidebar-left">
       <div class="sidebar-section">
         <h3>Contacts</h3>
         <ul>
           <li>
-            <!-- Email -->
             <i class="fas fa-envelope"></i>
             <a href="mailto:rahaman1@ibm.com">rahaman1@ibm.com</a>
           </li>
           <li>
-            <!-- LinkedIn -->
             <i class="fab fa-linkedin"></i>
             <a href="https://www.linkedin.com/in/mostafizur-rahaman-0698b3a6/" target="_blank">LinkedIn Profile</a>
           </li>
@@ -33,6 +31,21 @@
     <main class="content">
       {{ content }}
     </main>
+
+    <!-- Right Sidebar -->
+    <aside class="sidebar-right">
+      <div class="sidebar-section">
+        <h3>News</h3>
+        <ul>
+          <li>
+            <a href="https://example.com/project" target="_blank">New Project Launched</a>
+          </li>
+          <li>
+            <a href="https://example.com/xyz-announcement" target="_blank">Joined XYZ Company</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
   </div>
 </body>
 </html>
