@@ -1,51 +1,74 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mostafizur Rahaman</title>
-  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
-  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      background-color: #004080;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+    }
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+    .navbar a:hover {
+      background-color: #0066cc;
+      color: white;
+    }
+    .content {
+      padding: 20px;
+    }
+    .tab {
+      display: none;
+    }
+    .tab.active {
+      display: block;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Left Sidebar -->
-    <aside class="sidebar-left">
-      <div class="sidebar-section">
-        <h3>Contacts</h3>
-        <ul>
-          <li>
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:rahaman1@ibm.com">rahaman1@ibm.com</a>
-          </li>
-          <li>
-            <i class="fab fa-linkedin"></i>
-            <a href="https://www.linkedin.com/in/mostafizur-rahaman-0698b3a6/" target="_blank">LinkedIn Profile</a>
-          </li>
-        </ul>
-      </div>
-    </aside>
-
-    <!-- Main Content -->
-    <main class="content">
-      {{ content }}
-    </main>
-
-    <!-- Right Sidebar -->
-    <aside class="sidebar-right">
-      <div class="sidebar-section">
-        <h3>News</h3>
-        <ul>
-          <li>
-<!--             <a href="https://example.com/project" target="_blank">New Project Launched</a> -->
-          </li>
-          <li>
-<!--             <a href="https://example.com/xyz-announcement" target="_blank">Joined XYZ Company</a> -->
-          </li>
-        </ul>
-      </div>
-    </aside>
+  <div class="navbar">
+    <a href="#" onclick="showTab('home')">Home</a>
+    <a href="#" onclick="showTab('news')">News</a>
+    <a href="#" onclick="showTab('contact')">Contact</a>
   </div>
+
+  <div class="content">
+    <div id="home" class="tab active">
+      <h2>Welcome to Mostafizur Rahaman's Page</h2>
+      <p>This is the home section.</p>
+    </div>
+    <div id="news" class="tab">
+      <h2>News</h2>
+      <p>Latest updates will be displayed here.</p>
+    </div>
+    <div id="contact" class="tab">
+      <h2>Contact</h2>
+      <ul>
+        <li>Email: <a href="mailto:rahaman1@ibm.com">rahaman1@ibm.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/mostafizur-rahaman-0698b3a6/">Visit Profile</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.tab');
+      tabs.forEach(tab => tab.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+    }
+  </script>
 </body>
 </html>
