@@ -1,22 +1,62 @@
-.sidebar ul {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Left Sidebar */
+.sidebar-left {
+  width: 20%;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+/* Main Content */
+.content {
+  width: 60%;
+  padding: 20px;
+}
+
+/* Right Sidebar */
+.sidebar-right {
+  width: 20%;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-left: 1px solid #ddd;
+}
+
+/* Sidebar Section Styles */
+.sidebar-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.sidebar-section ul {
   list-style-type: none;
   padding: 0;
 }
 
-.sidebar ul li {
+.sidebar-section ul li {
   margin-bottom: 10px;
 }
 
-.sidebar ul li i {
-  margin-right: 8px;
-  color: #0077b5; /* LinkedIn blue */
-}
-
-.sidebar ul li a {
+.sidebar-section ul li a {
   text-decoration: none;
   color: #0073e6;
 }
 
-.sidebar ul li a:hover {
+.sidebar-section ul li a:hover {
   text-decoration: underline;
+}
+
+.sidebar-section ul li i {
+  margin-right: 8px;
+  color: #555;
 }
