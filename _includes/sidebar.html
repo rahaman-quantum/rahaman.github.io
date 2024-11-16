@@ -1,0 +1,30 @@
+<div class="sidebar">
+  <!-- News Section -->
+  <div class="sidebar-section">
+    <h3>News</h3>
+    <ul>
+      {% for item in site.sidebar.news %}
+      <li>
+        <a href="{{ item.link }}" target="_blank">
+          <i class="fas fa-newspaper"></i> {{ item.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- Contacts Section -->
+  <div class="sidebar-section">
+    <h3>Contacts</h3>
+    <ul>
+      <li>
+        <i class="fas fa-envelope"></i> 
+        <a href="mailto:{{ site.sidebar.contact.email }}">{{ site.sidebar.contact.email }}</a>
+      </li>
+      <li>
+        <i class="fab fa-linkedin"></i> 
+        <a href="{{ site.sidebar.contact.linkedin }}" target="_blank">LinkedIn Profile</a>
+      </li>
+    </ul>
+  </div>
+</div>
