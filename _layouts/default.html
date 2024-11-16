@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -12,7 +12,7 @@
       padding: 0;
     }
     .navbar {
-      background-color: #004080;
+      background-color: #808080; /* Grey color */
       overflow: hidden;
       display: flex;
       justify-content: center;
@@ -36,29 +36,109 @@
     .tab.active {
       display: block;
     }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
   </style>
 </head>
 <body>
   <div class="navbar">
     <a href="#" onclick="showTab('home')">Home</a>
-    <a href="#" onclick="showTab('news')">News</a>
+    <a href="#" onclick="showTab('publications')">Publications</a>
     <a href="#" onclick="showTab('contact')">Contact</a>
   </div>
 
   <div class="content">
+    <!-- Home Tab -->
     <div id="home" class="tab active">
       <h2>Welcome to Mostafizur Rahaman's Page</h2>
       <p>This is the home section.</p>
     </div>
-    <div id="news" class="tab">
-      <h2>News</h2>
-      <p>Latest updates will be displayed here.</p>
+
+    <!-- Publications Tab -->
+    <div id="publications" class="tab">
+      <h2>Publications</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Title</th>
+            <th>Journal/Conference</th>
+            <th>Year</th>
+            <th>DOI/Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Journal</td>
+            <td>A Complexity Efficient Penta-Diagonal Quantum Smoothing Filter for ECG Signal Denoising</td>
+            <td>Nature Scientific Report</td>
+            <td>April 2024</td>
+            <td><a href="https://doi.org/10.1038/s41598-024-59851-5" target="_blank">DOI</a></td>
+          </tr>
+          <tr>
+            <td>Journal</td>
+            <td>A Complexity-Efficient Quantum Architecture and Simulation for Eigen Spectrum Estimation</td>
+            <td>IEEE Transactions on Circuits and Systems-I</td>
+            <td>Feb. 2023</td>
+            <td><a href="https://doi.org/10.1109/TCSI.2023.3247886" target="_blank">DOI</a></td>
+          </tr>
+          <tr>
+            <td>Journal</td>
+            <td>A Proposed Quantum Framework for Low-Complexity Quantum Simulation</td>
+            <td>IEEE Transactions on Quantum Engineering</td>
+            <td>Oct. 2023</td>
+            <td><a href="https://doi.org/10.1109/TQE.2023.3329213" target="_blank">DOI</a></td>
+          </tr>
+          <tr>
+            <td>Journal</td>
+            <td>A Low Complexity Quantum Simulation Framework for Toeplitz-Structured Matrix</td>
+            <td>IEEE Transactions on Quantum Engineering</td>
+            <td>Apr. 2023</td>
+            <td><a href="https://doi.org/10.1109/TQE.2023.3271995" target="_blank">DOI</a></td>
+          </tr>
+          <tr>
+            <td>Journal</td>
+            <td>Eigen-Spectrum Estimation and Source Detection in a Massive Sensor Array</td>
+            <td>IEEE Transactions on Communications</td>
+            <td>Apr. 2022</td>
+            <td><a href="https://doi.org/10.1109/TCOMM.2022.3167057" target="_blank">DOI</a></td>
+          </tr>
+          <tr>
+            <td>Conference</td>
+            <td>Quantum Assisted Framework for Joint Detection and Estimation in Radar Communications</td>
+            <td>IEEE VTC-Spring 2023</td>
+            <td>2023</td>
+            <td><a href="https://doi.org" target="_blank">Paper Link</a></td>
+          </tr>
+          <tr>
+            <td>Patent</td>
+            <td>A Quantum Circuit System For Realizing Vandermonde Matrix</td>
+            <td>Indian Patent</td>
+            <td>2023</td>
+            <td><a href="https://doi.org" target="_blank">Patent Link</a></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+
+    <!-- Contact Tab -->
     <div id="contact" class="tab">
       <h2>Contact</h2>
       <ul>
         <li>Email: <a href="mailto:rahaman1@ibm.com">rahaman1@ibm.com</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/mostafizur-rahaman-0698b3a6/">Visit Profile</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/mostafizur-rahaman-0698b3a6/" target="_blank">Visit Profile</a></li>
       </ul>
     </div>
   </div>
