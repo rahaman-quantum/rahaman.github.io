@@ -1,3 +1,3 @@
-### Research Scientist
+### Mostafizur Rahaman
 
-### IBM Quantum, IBM Research
+### Research Scientist, IBM Quantum, IBM Research Lab
